@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Protegida</title>
+</head>
+<body>
+  <h1>Página Protegida</h1>
+  <p>Bem-vindo à página protegida!</p>
+  <button id="logout">Sair</button>
+  <div id="message"></div>
+
+  <script>
+    // Verificar se o token existe
+    const token = localStorage.getItem('token');
+    if (!token) {
+      alert("Você não está autorizado a acessar esta página.");
+      window.location.href = "index.html"; // Redirecionar para a página de login
+    }
+
+    document.getElementById("logout").addEventListener("click", () => {
+      localStorage.removeItem('token'); // Remover o token do localStorage
+      window.location.href = "index.html"; // Redirecionar para a página de login
+    });
+
+    // Fazer uma requisição para a rota protegida
+    fetch("http://localhost:3000/protegida", {
+      method: "GET",
+      headers: {
+        "Authorization": `Bearer ${token}`
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.mensagem) {
+        document.getElementById('message').innerText = data.mensagem;
+      } else {
+        document.getElementById('message').innerText = 'Erro: Nenhuma mensagem retornada.';
+      }
+    })
+    .catch(err => {
+      console.error("Erro ao acessar a rota protegida:", err);
+      document.getElementById('message').innerText = 'Erro ao acessar a página protegida.';
+    });
+  </script>
+</body>
+</html>

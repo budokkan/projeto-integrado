@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Projeto Integrador</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-money-bill-trend-up" id="nav_logo"> Investindo do Zero</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Investimentos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default" onclick="window.open('login/login/index.html', '_blank');">
+                comece já 
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Peça aqui
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    Aprenda a investir com 
+                    <span>pouco</span>
+                </h1>
+
+                <p class="description">
+                    Investir do zero é plantar as sementes do futuro; cada passo dado hoje é uma semente para a colheita de amanhã.
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">
+                        Ver Investimentos
+                    </a>
+
+                    <a href="tel:+55555555555" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (61) 98480-8838
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="src/images/capa-pi-removebg-preview.png" alt=""> 
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Principas Investimentos </h2>
+            <h3 class="section-subtitle">Renda Fixa</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/poupança.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Poupança
+                    </h3>
+
+                    <span class="dish-description">
+                        A poupança é uma conta bancária simples e segura que oferece rendimentos baixos, ideal para guardar dinheiro com liquidez diária.        
+                     </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(0,83% ao mês.
+                            R$ 1.000,00 vira R$ 1.008,30.+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>Invista Com Pouco</h4>
+                        <button onclick="window.open('https://www.youtube.com/watch?v=QkjtIwKwWyA')" class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/tesourodireto.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Tesouro Direto
+                    </h3>
+
+                    <span class="dish-description">
+                        O Tesouro Direto é um programa de investimento em títulos públicos, seguro e acessível, ideal para quem deseja rentabilidade com baixo risco.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(O Tesouro Direto rende cerca de 1% ao mês, dependendo do título.+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>Invista Com Pouco</h4>
+                        <button onclick="window.open('https://www.youtube.com/watch?v=QkjtIwKwWyA')" class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/cdb.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        CDB
+                    </h3>
+
+                    <span class="dish-description">
+                        O CDB (Certificado de Depósito Bancário) é um investimento de renda fixa onde você empresta dinheiro ao banco e recebe juros em troca.  
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(Um CDB pode render cerca de 1% ao mês, dependendo do CDI.+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>Invista Com Pouco</h4>
+                        <button onclick="window.open('https://www.youtube.com/watch?v=QkjtIwKwWyA')" class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/lca-lci.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        LCI/LCA
+                    </h3>
+
+                    <span class="dish-description">
+                        A LCI/LCA é um investimento de renda fixa que oferece rendimento de 1% a 1,5% ao mês e isenção de Imposto de Renda, emprestando dinheiro para os setores imobiliário ou agrícola.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(A LCI/LCA rende de 1% a 1,5% ao mês.+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>Invista Como Pouco</h4>
+                        <button onclick="window.open('https://www.youtube.com/watch?v=QkjtIwKwWyA')" class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="src/images/investidor-removebg-preview (1).png" id="testimonial_chef" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que os clientes falam sobre nós:
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Thais Ferreira
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Comecei a investir em CDB porque estava cansado da poupança,<br>
+                                 mas ainda queria algo mais seguro. A rentabilidade é muito melhor,<br>
+                                 e o fato de ser garantido pelo FGC me dá bastante tranquilidade.<br>
+                                 Estou gostando bastante até agora."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/images/avatar3.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Daniel Marcos da Silva
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Acho que a bolsa de valores é uma ótima oportunidade de crescimento,<br>
+                                mas confesso que fico um pouco receoso com os altos e baixos.<br>
+                                Mesmo tentando me informar e diversificar, ainda sinto que os riscos são grandes,
+                                especialmente quando o mercado entra em queda."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-default">
+                    Ver mais avaliações
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/images/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 Luan Menezes, João Silva, João Sousa
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>

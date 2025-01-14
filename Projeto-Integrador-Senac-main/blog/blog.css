@@ -1,0 +1,92 @@
+/* Estilo Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da Página */
+body {
+    background-color: #ffe8b4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ffe8b4;
+}
+
+/* Container Principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos das Seções */
+section h2 {
+    font-size: 2em;
+    color: #0a8355;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 1.5em;
+    color: #0a8355;
+    margin-top: 20px;
+}
+
+/* Parágrafos e Listas */
+p, ul, ol {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Estilo das Listas */
+ul li, ol li {
+    line-height: 1.6;
+}
+
+/* Estilo do Rodapé */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1em;
+    color: #7f8c8d;
+}
+
+footer p {
+    margin: 20px 0;
+}
+
+/* Estilos para links, se necessário */
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
